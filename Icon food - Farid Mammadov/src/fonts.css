@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Monserrat;
+    src: url("../src/assets/fonts/Montserrat-Black.ttf") format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Monserrtat_I';
+    src: url("../src/assets/fonts/Montserrat-BlackItalic.ttf") format('ttf');
+    font-weight: normal;
+    font-style: italic;
+  }

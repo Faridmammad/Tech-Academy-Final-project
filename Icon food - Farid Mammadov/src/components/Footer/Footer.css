@@ -1,0 +1,50 @@
+/* FooterMenu.css */
+
+/* Main footer menu styling */
+.footer {
+  background-color:  #FFFFFF;
+  padding: 20px;
+  text-align: left;
+  padding: 1.5rem;
+}
+
+.footer-brand {
+  background-color: #FAFAFA;
+}
+
+.footer-menu ul {
+  color: #252B42;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu li {
+  margin-right: 20px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.sub-menu {
+ 
+  color: #737373;
+  padding:30px;
+}
+.sub-menu li {
+  margin: 5px 0;
+}
+
+.sub-menu a {
+  text-decoration: none;
+}
+
+.sub-menu a:hover {
+  text-decoration: underline;
+}
