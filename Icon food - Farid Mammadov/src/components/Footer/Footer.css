@@ -1,50 +1,129 @@
-/* FooterMenu.css */
-
-/* Main footer menu styling */
 .footer {
-  background-color:  #FFFFFF;
-  padding: 20px;
+  background-color: #ffffff;
   text-align: left;
-  padding: 1.5rem;
 }
 
 .footer-brand {
-  background-color: #FAFAFA;
-}
-
-.footer-menu ul {
-  color: #252B42;
-  list-style: none;
-  padding: 0;
+  background-color: #fafafa;
+  padding: 2rem 3rem 2rem 3rem;
   display: flex;
   flex-direction: column;
+  margin: 0;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer-logo {
+  font-family: Spectral-Regular;
+  color: #252b42;
+  padding-bottom: 0.5rem;
 }
 
+.footer-brand ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.footer-menu {
+  padding: 3rem;
+
+}
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+  }
+ 
+
+.stylelinks {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer-menu li {
-  margin-right: 20px;
+  color: #252b42;
+  margin-bottom: 0.5rem;
+  
 }
 
 .footer-menu a {
   text-decoration: none;
+  color: #252b42;
+  font-family: Monserrat700;
+  font-size: 16px;
 }
 
 .footer-menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .sub-menu {
- 
   color: #737373;
-  padding:30px;
+  font-family: Spectral700;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
+
 .sub-menu li {
   margin: 5px 0;
 }
 
+.sub-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .sub-menu a {
   text-decoration: none;
+  font-family: Spectral400;
+  color: #737373;
 }
 
 .sub-menu a:hover {
   text-decoration: underline;
+}
+
+.emaillabel {
+  width: 150px;
+  height: 58px;
+  outline: none;
+}
+
+.emailbutton {
+  width: 117px;
+  height: 58px;
+  background-color: #b73225;
+  color: #ffffff;
+  font-family: Monserrat400;
+  border-radius: 0px 10px 10px 0px;
+  outline: none;
+}
+
+.legacytitle {
+  background-color: #fafafa;
+  padding: 2rem;
+  font-family: Monserrat700;
+  font-size: 14px;
+  color: #737373;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
 }

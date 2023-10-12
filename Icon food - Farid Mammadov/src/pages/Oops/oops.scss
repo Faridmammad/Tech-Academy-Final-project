@@ -1,0 +1,24 @@
+.oops_container {
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: left;
+        gap: 0.8rem;
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            img {
+                padding-right: 10px;
+            }
+        }
+
+    }
+    
+}

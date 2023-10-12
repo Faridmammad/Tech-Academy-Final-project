@@ -1,0 +1,36 @@
+/* HamburgerMenu.css */
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hamburger-icon {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+  }
+  
+  .open .bar {
+    background-color: #fff;
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
