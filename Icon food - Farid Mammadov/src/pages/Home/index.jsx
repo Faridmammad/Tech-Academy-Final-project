@@ -1,8 +1,10 @@
 import React from 'react'
 
+import "../../fonts.css"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='test'>Home</div>
   )
 }
 

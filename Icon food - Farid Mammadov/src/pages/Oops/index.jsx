@@ -1,9 +1,8 @@
 import "./oops.scss"
 import "../../fonts.css"
-import robotimg from "../../assets/images/404robot.png"
-import chevron_left from "../../assets/icons/chevron_left.png"
+import {robotimg} from "../../assets/images/index"
 
-import arrow_right from "../../assets/icons/arrow_right.png"
+import { arrow_right, chevron_left } from "../../assets/icons/index"
 
 
 const Oops = () => {
@@ -11,7 +10,7 @@ const Oops = () => {
     <div className="oops_container">
 
     <h1>404</h1>
-    <img src={robotimg}></img>
+    <img className="robotimg" src={robotimg}></img>
     
     <h1>Oops</h1>
     <h4>We can`t seem to find the page you`re looking for</h4>

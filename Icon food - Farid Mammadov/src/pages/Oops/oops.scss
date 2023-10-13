@@ -1,24 +1,62 @@
 .oops_container {
-    padding: 2rem;
-    display:flex;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+
+  h1 {
+    font-family: Monserrat700;
+    font-size: 40px;
+    color: #252b42;
+  }
+  h3 {
+    font-family: Monserrat700;
+    font-size: 24px;
+    color: #252b42;
+  }
+  h4 {
+    font-family: Monserrat400;
+    font-size: 20px;
+    color: #737373;
+  }
+
+  ul {
+    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        text-align: left;
-        gap: 0.8rem;
-        a {
-            text-decoration: none;
-            font-size: 14px;
-            img {
-                padding-right: 10px;
-            }
-        }
-
+    list-style: none;
+    text-align: left;
+    gap: 0.8rem;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
-    
+    a {
+      font-family: Monserrat700;
+      text-decoration: none;
+      font-size: 14px;
+      color:#252b42;
+      img {
+        width: 16px;
+        height: 9px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.robotimg {
+  width: 380px;
+  height: 393px;
+}
+
+.oops_button {
+  font-family: Monserrat700;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #2dc071;
+  width: 130px;
+  height: 52px;
 }
