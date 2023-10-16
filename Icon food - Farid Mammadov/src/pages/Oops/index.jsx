@@ -1,5 +1,5 @@
 import "./oops.scss"
-import "../../fonts.css"
+import "../../assets/fonts/fonts.css"
 import {robotimg} from "../../assets/images/index"
 
 import { arrow_right, chevron_left } from "../../assets/icons/index"

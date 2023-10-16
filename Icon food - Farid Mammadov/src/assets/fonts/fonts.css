@@ -25,6 +25,14 @@
 
  /* !? Spectral font */
  @font-face {
+  font-family: Spectral800;
+  src: url("../src/assets/fonts/Spectral-Bold.ttf") format('ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+ @font-face {
   font-family: Spectral700;
   src: url("../src/assets/fonts/Spectral-Bold.ttf") format('ttf');
   font-weight: 700;

@@ -1,36 +1,42 @@
-/* HamburgerMenu.css */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.logo {
+  a {
+    font-family: Spectral700;
+    font-size: 26px;
+    color: #252b42;
+    text-decoration: none;
+  }
+}
 
-.hamburger-menu {
+.menulinks {
+  ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2rem;
+
+    li {
+      list-style: none;
+      a {
+        color: #737373;
+
+        text-decoration: none;
+      }
+    }
   }
-  
-  .hamburger-icon {
-    cursor: pointer;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
+}
+
+
+.logreg {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  a {
+    text-decoration: none;
+    
   }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 3px 0;
-  }
-  
-  .open .bar {
-    background-color: #fff;
-  }
-  
-  .menu {
-    display: none;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menu li {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-  }
-  
+}

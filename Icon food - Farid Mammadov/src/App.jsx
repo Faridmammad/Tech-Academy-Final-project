@@ -1,5 +1,5 @@
 import './App.css'
-import './fonts.css'
+import "./assets/fonts/fonts.css"
 import { Routes, Route } from 'react-router-dom';
 import {Header, Footer} from "./components"
 import { Home, Oops, FAQ, Blogs, Contact, About, Products} from "./pages"
@@ -8,7 +8,6 @@ function App() {
   return (
 
     <>
-    Salam
     
       <Header />
       <Routes>

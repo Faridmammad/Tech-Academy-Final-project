@@ -6,6 +6,15 @@
   padding: 3rem;
 }
 
+.contact_container_top {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1200px) { 
+        flex-direction: row;
+
+    }
+}
+
 .contact_details {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../../fonts.css"
+import "../../assets/fonts/fonts.css"
 
 const Home = () => {
   return (

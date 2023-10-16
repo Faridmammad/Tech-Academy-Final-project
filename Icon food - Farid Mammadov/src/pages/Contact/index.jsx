@@ -3,13 +3,16 @@ import React from "react";
 import {facebook_blue, twitter_blue, linkedin_blue, instagram_blue, pin, phone, email, arrow_curved} from "../../assets/icons/index"
 import {small_donut} from "../../assets/images/index"
 import "./contact.scss"
-import "../../fonts.css"
+import "../../assets/fonts/fonts.css"
 
 
 const Contact = () => {
   return (
     <div className="contact_container">
-      <div className="contact_details">
+
+
+      <div className="contact_container_top">
+         <div className="contact_details">
         <h3>CONTACT US</h3>
         <h4>Get in touch today</h4>
         <h6>
@@ -31,9 +34,13 @@ const Contact = () => {
       <div className="contact_img">
         <img src={small_donut}/>
       </div>
+      </div>
+     
+
+
+
 
 // !!
-
 {/* VISIT OUR OFFICE
 We help small businesses 
 with big ideas */}

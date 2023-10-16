@@ -1,4 +1,5 @@
 import "./Footer.css"
+import "../../assets/fonts/fonts.css"
 
 import facebook from "../../assets/icons/brands/facebook.png"
 import instagram from "../../assets/icons/brands/instagram.png"
