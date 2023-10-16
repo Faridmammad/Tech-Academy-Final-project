@@ -1,0 +1,91 @@
+.faq_container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  h6 {
+    display: flex;
+    font-family: Monserrat400;
+    font-size: 14px;
+    color: #737373;
+    text-align: center;
+    align-items: center;
+  }
+
+  h1 {
+    display: flex;
+    font-family: Monserrat700;
+    font-size: 40px;
+    color: #252b42;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.faq_title {
+  font-family: Spectral800;
+  font-size: 80px;
+  color: #252b42;
+}
+
+.faq_qa {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq_question {
+  font-family: Monserrat700;
+  font-size: 16px;
+  color: #252b42;
+}
+
+.faq_answer {
+  font-family: Spectral400;
+  font-size: 16px;
+  color: #737373;
+}
+
+.faq_subs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.faq_subs_title {
+  font-family: Spectral800;
+  font-size: 44px;
+  color: #252b42;
+}
+
+.faq_subs_subtitle {
+  font-family: Spectral400;
+  font-size: 16px;
+  color: #737373;
+}
+
+.faq_emaillabel {
+  width: 311px;
+  height: 58px;
+  outline: none;
+  font-family: Monserrat400;
+  font-size: 14px;
+}
+
+.faq_button {
+  width: 311px;
+  height: 58px;
+  font-family: Monserrat400;
+  font-size: 14px;
+  color: #ffffff;
+
+  @media (min-width: 1200px) {
+    width: 117px;
+    height: 58px;
+    border-radius: 0px 5px 5px 0px;
+  }
+}
