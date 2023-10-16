@@ -1,0 +1,117 @@
+.blogdetail_container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+}
+
+.blogdetail_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #252B42;
+    padding: 3rem;
+}
+
+.blogdetail_heading_title {
+    font-family: Spectral800;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.blogdetail_heading_subtitle {
+    font-family: Spectral700;
+    font-size: 20px;
+    text-align: center;
+    color: #ECECEC;
+}
+
+
+.blogdetail_post {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    img {
+        width: 422px;
+        height: 345px;
+    }
+    h3 {
+        font-family: Monserrat700;
+        font-size: 24px; 
+        padding: 1rem;
+    }
+    h4 {
+        font-family: Spectral400;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 1.5rem;
+    }
+    @media (min-width: 1200px) { 
+        align-items: center;
+        width: 690px;
+     }
+}
+
+
+.blogdetail_featured {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: Spectral800;
+        font-size: 44px;
+        color: #252B42;
+        padding: 3rem;
+    }
+   
+}
+
+.blogdetail_blogcards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media (min-width: 1200px) { 
+        flex-direction: row;
+     }
+}
+
+.blogdeteail_author {
+display: flex;
+flex-direction: row;
+gap: 2rem;
+background-color: #FAFAFA;
+
+img {
+    width: 128px;
+    height: 128px;
+    @media (min-width: 1200px) { 
+        width: 245px;
+        height: 245px;
+     }
+}
+}
+
+.blogdetail_author_details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blogdetail_author_name {
+    font-family: Monserrat700;
+    font-size: 16px;
+}
+
+.blogdetail_author_txt {
+    font-family: Spectral400;
+    font-size: 16px;
+    text-align: justify;
+}
