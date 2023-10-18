@@ -1,0 +1,33 @@
+.usercard_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.usercard_username {
+  font-family: Monserrat700;
+  font-size: 16px;
+  color: #252b42;
+}
+
+.usercard_profession {
+  font-family: Monserrat700;
+  font-size: 14px;
+  color: #252b42;
+}
+
+.usercard_social {
+  ul {
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: row;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}

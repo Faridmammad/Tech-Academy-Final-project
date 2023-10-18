@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "icfood-admin",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -20,7 +20,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "7cbaedb6-7f87-4c2e-b9e5-1355609c5b3e"
+    "uuid": "b201887d-b980-4eae-9581-70aba88aac60"
   },
   "engines": {
     "node": ">=16.0.0 <=20.x.x",

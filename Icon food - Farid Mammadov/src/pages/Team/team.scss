@@ -1,0 +1,146 @@
+.team_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.team_gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  .team_gallery_title {
+    font-family: Monserrat700;
+    font-size: 40px;
+    color: #252b42;
+    text-align: center;
+  }
+  .team_gallery_subtitle {
+    font-family: Spectral700;
+    font-size: 17px;
+    color: #737373;
+  }
+}
+
+.team_gallery_images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+  .team_gallery_images_2-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .team_gallery_images_2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .team_gallery_images_3 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    .img1 {
+      width: 700px;
+      height: 530px;
+      img {
+        width: 100%;
+        height: 100%; 
+      }
+    }
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
+      width: 360px;
+      height: 260px;
+      img {
+        width: 100%;
+        height: 100%; 
+      }
+    }
+  }
+}
+
+.team_users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem, 0, 2rem, 0;
+  .team_users_title {
+    font-family: Monserrat700;
+    font-size: 40px;
+    color: #252b42;
+    text-align: center;
+  }
+  ._team_users_cards {
+    padding-bottom: 1rem;
+  }
+}
+
+._team_users_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+  }
+}
+
+.team_trial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  .team_trial_title {
+    font-family: Spectral800;
+    font-size: 44px;
+    color: #252b42;
+    text-align: center;
+  }
+
+  .team_trial_subtitle {
+    font-family: Spectral400;
+    font-size: 16px;
+    color: #737373;
+    text-align: center;
+  }
+  .team_button {
+    width: 191px;
+    height: 52px;
+    color: #ffffff;
+    font-family: Spectral700;
+    font-size: 16px;
+  }
+  .team_social {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+img {
+  object-fit:cover;
+}

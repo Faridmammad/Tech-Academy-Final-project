@@ -1,0 +1,49 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Alex",
+        "profession": "CEO"
+      },
+      {
+        "id": 2,
+        "name": "Ali",
+        "profession": "Co-founder"
+      },
+      {
+        "id": 3,
+        "name": "Dali",
+        "profession": "General Manager"
+      },
+      {
+        "id": 4,
+        "name": "Max",
+        "profession": "Marketing Manager"
+      },
+      {
+        "id": 5,
+        "name": "Jennie",
+        "profession": "Sales Director"
+      },
+      {
+        "id": 6,
+        "name": "Martin",
+        "profession": "Waiter"
+      },
+      {
+        "id": 7,
+        "name": "Freddy",
+        "profession": "Developer"
+      },
+      {
+        "id": 8,
+        "name": "Ann",
+        "profession": "Tester"
+      },
+      {
+        "id": 9,
+        "name": "Ali",
+        "profession": "Volunteer"
+      }
+    ]
+  }

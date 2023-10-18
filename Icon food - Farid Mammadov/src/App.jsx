@@ -2,7 +2,7 @@ import './App.css'
 import "./assets/fonts/fonts.css"
 import { Routes, Route } from 'react-router-dom';
 import {Header, Footer} from "./components"
-import { Home, Oops, FAQ, Blogs, BlogDetail, Contact, About, Products} from "./pages"
+import { Home, Oops, FAQ, Blogs, BlogDetail, Contact, About, Team, Products} from "./pages"
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
         <Route path="Contact" element={ <Contact/> } /> 
         <Route path="About" element={ <About/> } />
         <Route path="Products" element={ <Products/> } />
+        
+        <Route path="Team" element={ <Team/> } />
         <Route path="*" element={ <Oops/> } />
       </Routes>
       <Footer />
