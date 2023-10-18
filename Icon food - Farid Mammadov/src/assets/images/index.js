@@ -3,6 +3,10 @@ export {default as small_donut} from "./small_donut.png"
 export {default as makaroni} from "../../assets/images/makaroni.png"
 export {default as waffle} from "../../assets/images/waffle.png"
 export {default as annimg} from "../../assets/images/ann.png"
+export {default as testimonials_img} from "../../assets/images/testimonials.svg"
+export {default as video_desktop} from "./video_desktop.svg"
+export {default as video_mobile} from "./video_mobile.svg"
+export {default as about_img} from "./about_img.svg"
 
 // team users
 

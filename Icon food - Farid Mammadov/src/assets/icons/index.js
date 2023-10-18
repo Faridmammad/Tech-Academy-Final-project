@@ -23,3 +23,11 @@ export {default as linkedin_blue} from "./social_brands2/twitter.png"
 
 export {default as date_icon} from "./blogicons/date_icon.png"
 export {default as stat_icon} from "./blogicons/stat_icon.png"
+
+
+export {default as logo1} from "./company_logos/logo1.svg"
+export {default as logo2} from "./company_logos/logo2.svg"
+export {default as logo3} from "./company_logos/logo3.svg"
+export {default as logo4} from "./company_logos/logo4.svg"
+export {default as logo5} from "./company_logos/logo5.svg"
+export {default as logo6} from "./company_logos/logo6.svg"

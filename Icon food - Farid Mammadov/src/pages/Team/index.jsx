@@ -29,7 +29,6 @@ const Team = () => {
               <img src={gallery1} />
             </div>
           </div>
-
           <div className="team_gallery_images_2-3">
             <div className="team_gallery_images_2">
               <div className="img2">
