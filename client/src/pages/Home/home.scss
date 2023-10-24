@@ -1,0 +1,312 @@
+.home_container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.home_slider {
+  display: flex;
+  flex-direction: column;
+  background-color: #9feaeb;
+  border-radius: 10px;
+  padding: 2rem 0 2rem 0;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.home_slider_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    align-items: start;
+  }
+
+  .home_slider_heading {
+    font-family: Spectral700;
+    font-size: 17px;
+    color: #2a7cc7;
+    text-transform: uppercase;
+  }
+  .home_slider_title {
+    font-family: Spectral800;
+    font-weight: 800;
+    font-size: 44px;
+    color: #252b42;
+    @media (min-width: 1200px) {
+      font-size: 80px;
+    }
+  }
+  .home_slider_subtitle {
+    font-family: Spectral700;
+    font-size: 20px;
+    color: #737373;
+    text-align: center;
+  }
+  .home_slider_button {
+    width: 230px;
+    height: 65px;
+    font-family: Special700;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
+.home_slider_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_companies {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fafafa;
+  width: 100%;
+  .about_companies_title {
+    font-family: Spectral800;
+    font-size: 44px;
+    color: #252b42;
+    text-align: center;
+  }
+  .about_companies_subtitle {
+    font-family: Spectral400;
+    font-size: 16px;
+    color: #737373;
+    text-align: center;
+  }
+}
+.about_companies_logos {
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+    li {
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.home_shop_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.home_shop_cards_desktop {
+  display: none;
+
+  @media (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+.home_shop_cards_desktop_right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home_product_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  .home_product_cards_title {
+    font-family: Spectral700;
+    font-size: 26px;
+    color: #252b42;
+  }
+  .home_product_cards_subtitle {
+    font-family: Spectral400;
+    font-size: 16px;
+    color: #737373;
+  }
+}
+
+.home_product_cards_mobiledesktop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.home_product_cards_justdesktop {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+.home_product_cards_button {
+  width: 260px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #b73225;
+  font-family: Monserrat700;
+  font-size: 14px;
+  border: 1px solid #000000;
+}
+
+.home_featured_products {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 1200px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.featured_products_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featured_products_heading {
+  font-family: Special700;
+  font-size: 17px;
+  color: #b73225;
+}
+.featured_products_title {
+  font-family: Spectral800;
+  font-size: 44px;
+  color: #252b42;
+  width: 260px;
+}
+.featured_products_subtitle {
+  font-family: Spectral400;
+  font-size: 16px;
+  color: #737373;
+  width: 260px;
+}
+
+.featured_products_images {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.home_features_top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.features_heading {
+  font-family: Special700;
+  font-size: 20px;
+  color: #737373;
+}
+
+.features_title {
+  font-family: Special700;
+  font-size: 26px;
+  color: #252b42;
+  text-transform: uppercase;
+}
+
+.features_subtitle {
+  font-family: Spectral400;
+  font-size: 16px;
+  color: #737373;
+}
+
+.home_features_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.easywins,
+.concrete,
+.growth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.home_features_title {
+  font-family: Monserrat700;
+  font-size: 24px;
+  color: #252b42;
+}
+
+.home_features_subtitle {
+  font-family: Spectral400;
+  font-size: 16px;
+  color: #737373;
+  width: 240px;
+  text-align: center;
+}
+
+.home_featured_posts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  .featured_posts_title {
+    font-family: Spectral800;
+    font-size: 44px;
+    color: #252b42;
+  }
+  .featured_posts_card {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+}

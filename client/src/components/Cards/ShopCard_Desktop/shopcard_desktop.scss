@@ -1,0 +1,36 @@
+.shopcard_container {
+    display: flex;
+    position: relative;
+  }
+  
+  
+  .shopcard_info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #2d8bc0;
+    opacity: 0.7;
+    width: 345px;
+    height: 238px;
+    justify-content: end;
+    padding: 1rem;
+    gap: 1rem;
+    .shopcard_title {
+      font-family: Spectral700;
+      font-size: 26px;
+      color: #ffffff;
+    }
+  }
+  .shopcard_button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-family: #ffffff;
+    font-family: Monserrat700;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 201px;
+    height: 52px;
+  }
+  
