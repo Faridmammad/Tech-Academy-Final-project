@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./home.scss";
 import "../../assets/fonts/fonts.css";
 import { concrete, growth, logo1, logo2, logo3, logo4, logo5, logo6, wins } from "../../assets/icons";
@@ -6,6 +6,7 @@ import ProductCard from "../../components/Cards/ProductCard";
 import Button from "../../components/Button";
 import { BlogCard, ShopCard } from "../../components/Cards";
 import { cupcake, feapro1, feapro2, shopcard_d1, shopcard_d2, shopcard_d3, shopcard_m1, shopcard_m2, shopcard_m3 } from "../../assets/images/";
+
 
 
 const Home = () => {
