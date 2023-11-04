@@ -133,20 +133,20 @@ the Week"/>
         <div className="home_product_cards_mobiledesktop">
         <div className="home_product_container">
       {status === 'success' &&
-      data.slice(0, numProducts).map(({ id, attributes }) => (
-          <ProductCard
+      data.slice(0, numProducts).map(({ id, attributes  }) => (
+          <ProductCard className="home_product_inner_container"
             key={id}
             image={attributes.images?.data[0].attributes.url}
             title={attributes.title}
-            
-            category={attributes.categories}
+            category={attributes.categories?.data[0]?.attributes?.title}
             price={attributes.price}
             newprice={attributes.newprice}
+            
           />
+          
         ))}
     </div>
         </div>
-
 
         {numProducts < data.length && (
           <Button
