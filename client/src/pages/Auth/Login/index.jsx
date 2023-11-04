@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { fetchAuthLogin } from "../../../store/reducer/auth/authThunk";
+import "./login.scss"
+import "../../../assets/fonts/fonts.css"
 
 const Login = () => {
   const dispatch= useDispatch();
@@ -23,14 +25,17 @@ const Login = () => {
   };
      
   return (
-    <form onSubmit={handleSubmit}>
+
+    <div className="login_container">
+      
+    <form className="login_form" onSubmit={handleSubmit}>
       <input
         name="identifier"
         type="text"
         placeholder="email"
         value={logDatas.identifier}
-        
         onChange={handleChangeValue}
+        className="login_username"
       />
       <input
         name="password"
@@ -38,9 +43,12 @@ const Login = () => {
         placeholder="pass"
         value={logDatas.password}
         onChange={handleChangeValue}
+        
+        className="login_password"
       />
       <button>Sign in</button>
     </form>
+    </div>
   );
 };
 

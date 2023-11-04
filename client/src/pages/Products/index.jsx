@@ -1,13 +1,37 @@
-import React from 'react'
-import "./products.scss"
-import "../../assets/fonts/fonts.css"
+import React, { useState } from 'react';
+import "./Products.scss";
+import "../../assets/fonts/fonts.css";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchProducts } from '../../store/reducer/products/productThunk';
+import ProductCard from "../../components/Cards/ProductCard";
 
 const Products = () => {
-  return (
-    <>
-    Salam
-    </>
-  )
-}
+  const { products: { data }, status } = useSelector(state => state.product);
+  const dispatch = useDispatch();
 
-export default Products
+  React.useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
+  if (status === "pending") {
+    return <h1>Loading...</h1>;
+  }
+
+  return (
+    <div className="product-container">
+      {status === 'success' &&
+        data.map(({ id, attributes }) => (
+          <ProductCard
+            key={id}
+            image={attributes.images?.data[0].attributes.url}
+            title={attributes.title}
+            price={attributes.price}
+            newprice={attributes.newprice}
+            description={attributes.description}
+          />
+        ))}
+    </div>
+  );
+};
+
+export default Products;

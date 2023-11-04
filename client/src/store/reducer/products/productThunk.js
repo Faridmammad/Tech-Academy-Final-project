@@ -10,7 +10,7 @@ export const fetchProducts = createAsyncThunk(
   
         return result;
       } catch (error) {
-        return rejectWithValue("Nese problem oldu");
+        return rejectWithValue("Something happened");
       }
     }
   );

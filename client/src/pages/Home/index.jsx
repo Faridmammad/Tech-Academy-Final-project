@@ -1,15 +1,51 @@
-
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from "react-redux";
 import "./home.scss";
 import "../../assets/fonts/fonts.css";
 import { concrete, growth, logo1, logo2, logo3, logo4, logo5, logo6, wins } from "../../assets/icons";
+import { fetchProducts } from '../../store/reducer/products/productThunk';
 import ProductCard from "../../components/Cards/ProductCard";
 import Button from "../../components/Button";
 import { BlogCard, ShopCard } from "../../components/Cards";
 import { cupcake, feapro1, feapro2, shopcard_d1, shopcard_d2, shopcard_d3, shopcard_m1, shopcard_m2, shopcard_m3 } from "../../assets/images/";
 
-
-
 const Home = () => {
+  const { products: { data }, status } = useSelector(state => state.product);
+  const dispatch = useDispatch();
+  
+  const [numProducts, setNumProducts] = useState(5); 
+
+
+  React.useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
+  React.useEffect(() => {
+    const updateNumProducts = () => {
+      if (window.innerWidth >= 768) {
+        setNumProducts(10);
+      } else {
+        setNumProducts(5);
+      }
+    };
+
+    updateNumProducts();
+
+    window.addEventListener('resize', updateNumProducts);
+
+    return () => {
+      window.removeEventListener('resize', updateNumProducts);
+    };
+  }, []);
+  if (!data) {
+    return <p>No data available.</p>;
+  }
+
+
+  const loadMoreProducts = () => {
+    setNumProducts(numProducts + 3);
+  };
+
   return (
     <div className="home_container">
       <div className="home_slider">
@@ -89,36 +125,38 @@ the Week"/>
 
 </div>
 
-
-
       <div className="home_product_cards">
         <div className="home_product_cards_title">Bestseller products</div>
         <div className="home_product_cards_title">
           Problems trying to resolve the conflict between{" "}
         </div>
         <div className="home_product_cards_mobiledesktop">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+        <div className="home_product_container">
+      {status === 'success' &&
+      data.slice(0, numProducts).map(({ id, attributes }) => (
+          <ProductCard
+            key={id}
+            image={attributes.images?.data[0].attributes.url}
+            title={attributes.title}
+            
+            category={attributes.categories}
+            price={attributes.price}
+            newprice={attributes.newprice}
+          />
+        ))}
+    </div>
         </div>
 
-        <div className="home_product_cards_justdesktop">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-        </div>
 
-        <Button
-          label="Load More Products"
-          className="home_product_cards_button"
-        />
+        {numProducts < data.length && (
+          <Button
+            label="Load More Products"
+            className="home_product_cards_button"
+            onClick={loadMoreProducts}
+          />
+        )}
+       
       </div>
-
-
 
       <div className="home_featured_products">
         <div className="featured_products_info">
@@ -143,8 +181,6 @@ Newtonian mechanics
         </div>
 
       </div>
-
-
 
       <div className="home_features">
         <div className="home_features_top">
