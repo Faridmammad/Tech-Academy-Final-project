@@ -37,9 +37,9 @@ const Home = () => {
       window.removeEventListener('resize', updateNumProducts);
     };
   }, []);
-  if (!data) {
+   if (!data) {
     return <p>No data available.</p>;
-  }
+  } 
 
 
   const loadMoreProducts = () => {

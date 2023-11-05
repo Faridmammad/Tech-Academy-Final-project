@@ -3,8 +3,28 @@ import BlogCard from '../../components/Cards/BlogCard'
 import "./blogs.scss"
 import "../../assets/fonts/fonts.css"
 import BlogSubs from "../../components/BlogSubs"
+import { useSelector, useDispatch } from "react-redux";
+import { fetchBlogs } from "../../store/reducer/blogs/blogThunk";
 
 const Blogs = () => {
+
+  const {
+    blogs: { data },
+    status,
+  } = useSelector((state) => state.blog);
+  const dispatch = useDispatch();
+
+  console.log(data, "blogss");
+
+  React.useEffect(() => {
+    dispatch(fetchBlogs());
+  }, [dispatch]);
+
+  if (status === "pending") {
+    return <h1>Loading...</h1>;
+  }
+
+
   return (
    
     <div className="blog_container">
@@ -17,15 +37,16 @@ const Blogs = () => {
       </div>
 
 <div className="blog_container_posts">
-  
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
+     {status === "success" &&
+          data.map(({ id, attributes }) => (
+            <BlogCard
+            key={id}
+            image={attributes.images?.data[0].attributes.url}
+            category={attributes.categories?.data[0]?.attributes?.title}
+            title={attributes.title}
+            description={attributes.description}
+          />
+          ))}
 
 </div>
 

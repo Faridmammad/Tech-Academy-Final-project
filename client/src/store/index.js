@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import {authReducer, categoryReducer, productsReducer} from "./reducer"
+import {authReducer, categoryReducer, productsReducer, blogsReducer} from "./reducer"
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
@@ -16,6 +16,7 @@ export const store = configureStore({
     auth: persistedAuthReducer,
     category: categoryReducer,
     product: productsReducer,
+    blog: blogsReducer,
 
   },
 })
