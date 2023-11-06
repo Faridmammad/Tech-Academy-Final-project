@@ -39,12 +39,13 @@ const Blogs = () => {
 <div className="blog_container_posts">
      {status === "success" &&
           data.map(({ id, attributes }) => (
-            <BlogCard
+            <BlogCard className="blog_blogcard"
             key={id}
             image={attributes.images?.data[0].attributes.url}
-            category={attributes.categories?.data[0]?.attributes?.title}
+            tag={attributes.tags?.data[0].attributes.title}
             title={attributes.title}
             description={attributes.description}
+            date={attributes.date}
           />
           ))}
 

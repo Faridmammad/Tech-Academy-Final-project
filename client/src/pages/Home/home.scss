@@ -10,13 +10,17 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  gap: 2rem;
   align-items: center;
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .home_product_inner_container{
   
   justify-content: center;
-
   align-items: center;
+  
 }
 
 .home_slider {
@@ -81,9 +85,11 @@
 .about_companies {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  background-color: #fafafa;
+  gap: 4rem;
+  background-color: #FFFFFF;
   width: 100%;
+  padding: 2rem 0 2rem 0;
+
   .about_companies_title {
     font-family: Spectral800;
     font-size: 44px;
@@ -156,11 +162,15 @@
     font-family: Spectral700;
     font-size: 26px;
     color: #252b42;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
   }
   .home_product_cards_subtitle {
     font-family: Spectral400;
     font-size: 16px;
     color: #737373;
+    text-align: center;
   }
 }
 
@@ -196,7 +206,8 @@
 .home_featured_products {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
+  padding: 4rem 0 2rem 0;
 
   @media (min-width: 1200px) {
     flex-direction: row-reverse;
@@ -208,23 +219,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  @media (min-width: 1200px) {
+    width: 450px;
+    align-items: start;
+    
+  }
 }
 .featured_products_heading {
   font-family: Special700;
   font-size: 17px;
   color: #b73225;
+  @media (min-width: 1200px) {
+    width: 100%;
+    
+  }
 }
 .featured_products_title {
   font-family: Spectral800;
   font-size: 44px;
   color: #252b42;
   width: 260px;
+  @media (min-width: 1200px) {
+    width: 100%;
+    
+  }
 }
 .featured_products_subtitle {
   font-family: Spectral400;
   font-size: 16px;
   color: #737373;
   width: 260px;
+  @media (min-width: 1200px) {
+    width: 350px;
+    
+  }
 }
 
 .featured_products_images {
@@ -240,6 +269,8 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 0 2rem 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .home_features_top {
@@ -266,6 +297,7 @@
   font-family: Spectral400;
   font-size: 16px;
   color: #737373;
+  text-align: center;
 }
 
 .home_features_bottom {
@@ -314,13 +346,15 @@
     font-family: Spectral800;
     font-size: 44px;
     color: #252b42;
+    text-align: center;
   }
   .featured_posts_card {
     display: flex;
     flex-direction: column;
+    
+    gap: 2rem;
     @media (min-width: 1200px) {
       flex-direction: row;
-      gap: 2rem;
     }
   }
 }

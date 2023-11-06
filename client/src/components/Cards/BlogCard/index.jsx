@@ -1,18 +1,23 @@
-
 import "../../../assets/fonts/fonts.css";
+import { arrow_right, date_icon, stat_icon } from "../../../assets/icons";
 import "./BlogCard.scss";
-/* import { arrow_right2, date_icon, stat_icon } from "../../../assets/icons";
-import { makaroni } from "../../../assets/images/"; */
-const BlogCard = ({ title, category, image, description, className  }) => {
+const BlogCard = ({ tag, title, image, description, date, className  }) => {
   return (
 
 <>
-<div className={`blog-card ${className}`}>
-      <img src={`${import.meta.env.VITE_UPLOAD_IMG}${image}`} alt={title} />
+<div className={`blog_card ${className}`}>
+      <img className="blog_img" src={`${import.meta.env.VITE_UPLOAD_IMG}${image}`} alt={title} />
+      <div className="blog_card_info">
+        <h6 className="blog_tags">{tag}</h6>
+      <h1 className="blog_title">{title}</h1>
+      <p className="blog_description">{description}</p>
+      <div className="blog_date_stat">
+      <p className="blog_date"><img src={date_icon}/>{date}</p>
+      <p className="blog_comments"><img src={stat_icon}/>10 comments</p>
+      </div>
+      <a href="blog">Learn More<img src={arrow_right}/></a>
+      </div>
       
-      <h1 className="blog-title">{title}</h1>
-      <p className="blog_category">{category}</p>
-      <p className="blog-description">{description}</p>
     </div>
 </>
 

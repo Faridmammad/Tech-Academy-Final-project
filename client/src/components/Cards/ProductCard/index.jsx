@@ -6,13 +6,17 @@ const index = ({ title, category, price, newprice, image, description, className
 
   
   return (
-    <div className={`product-card ${className}`}>
-      <img src={`${import.meta.env.VITE_UPLOAD_IMG}${image}`} alt={title} />
+    <div className={`product_card ${className}`}>
+      <img  src={`${import.meta.env.VITE_UPLOAD_IMG}${image}`} alt={title} />
       
-      <h1 className="product-title">{title}</h1>
+      <h1 className="product_title">{title}</h1>
       <p className="product_category">{category}</p>
-      <p className="product-price"> ${price}, ${newprice}</p>
-      <p className="product-description">{description}</p>
+      <div className="prices">
+        <p className="product_price"> ${price}</p>
+        <p className="product_newprice"> ${newprice}</p>
+      </div>
+     
+      <p className="product_description">{description}</p>
     </div>
   );
 };
