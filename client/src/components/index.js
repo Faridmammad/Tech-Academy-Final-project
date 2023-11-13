@@ -5,3 +5,4 @@ export {default as BlogSubs} from "./BlogSubs"
 export {default as Button } from "./Button"
 
 export {default as Filter } from "./Filter"
+export {default as Sort } from "./Sort"

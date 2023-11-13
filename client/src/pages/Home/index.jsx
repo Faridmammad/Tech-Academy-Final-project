@@ -14,6 +14,11 @@ const Home = () => {
     products: { data },
     status,
   } = useSelector((state) => state.product);
+
+  
+  const {
+    blogs
+  } = useSelector((state) => state.blog);
   const dispatch = useDispatch();
 
   const [numProducts, setNumProducts] = useState(5);
@@ -34,7 +39,7 @@ const Home = () => {
     updateNumProducts();
 
     window.addEventListener("resize", updateNumProducts);
-
+console.log(data, "Salam");
     return () => {
       window.removeEventListener("resize", updateNumProducts);
     };
@@ -237,11 +242,11 @@ the Week"
 
         <div className="featured_posts_card">
         {status === "success" &&
-  data.slice(0, 2).map(({ id, attributes }) => (
+  blogs?.data?.slice(0, 2).map(({ id, attributes }) => (
     <BlogCard className="blog_blogcard"
             key={id}
             image={attributes.images?.data[0].attributes.url}
-            tag=/* {attributes.tags?.data[0].attributes.title} */ "Vegan"
+            tag=  "Vegan"
             title={attributes.title}
             description={attributes.description}
             date="10-11-2022"

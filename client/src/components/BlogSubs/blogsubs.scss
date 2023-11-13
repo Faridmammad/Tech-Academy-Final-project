@@ -2,11 +2,12 @@
 .blog_container_subs {
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 6rem;
     gap: 1.5rem;
     background-color: #2a7cc7;
     justify-content: center;
     align-items: center;
+    width: 100%;
     @media (min-width: 1200px) {
       flex-direction: row;
       justify-content: space-between;

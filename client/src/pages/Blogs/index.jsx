@@ -5,7 +5,6 @@ import "../../assets/fonts/fonts.css"
 import BlogSubs from "../../components/BlogSubs"
 import { useSelector, useDispatch } from "react-redux";
 import { fetchBlogs } from "../../store/reducer/blogs/blogThunk";
-
 const Blogs = () => {
 
   const {
@@ -38,7 +37,7 @@ const Blogs = () => {
 
 <div className="blog_container_posts">
      {status === "success" &&
-          data.map(({ id, attributes }) => (
+          data.slice(0, 6).map(({ id, attributes }) => (
             <BlogCard className="blog_blogcard"
             key={id}
             image={attributes.images?.data[0].attributes.url}

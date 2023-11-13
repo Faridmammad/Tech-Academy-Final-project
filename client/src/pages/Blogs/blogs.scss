@@ -1,3 +1,11 @@
+.blog_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .blog_container_title {
   text-align: center;
   font-family: Monserrat700;
@@ -20,17 +28,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 20px;
-gap: 1rem;
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
+  gap: 2rem;
 
+  @media (min-width: 1200px) {
     flex-direction: row;
+    width: 1300px;
   }
 }
-
-
 
 .blog-card {
   /* Styles for the entire blog card container */
@@ -51,9 +57,6 @@ gap: 1rem;
   align-items: flex-start;
   gap: 1rem;
 }
-
-
-
 
 .blog-image {
   /* Styles for the blog image */
@@ -84,8 +87,6 @@ gap: 1rem;
   /* Styles for the blog description */
   margin-top: 16px;
 }
-
-
 
 .product-container {
   display: flex;

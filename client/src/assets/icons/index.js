@@ -36,3 +36,10 @@ export {default as logo6} from "./company_logos/logo6.svg"
 export {default as wins} from "./home_services/wins.svg"
 export {default as concrete} from "./home_services/concrete.svg"
 export {default as growth} from "./home_services/growth.svg"
+
+
+//!?Product icons
+export {default as add2fav} from "./product_icons/add2fav.svg"
+export {default as add2cart} from "./product_icons/add2cart.svg"
+export {default as fastview} from "./product_icons/fastview.svg"
+export {default as stars} from "./product_icons/stars.svg"

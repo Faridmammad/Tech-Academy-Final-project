@@ -1,11 +1,33 @@
-import React from "react";
+import React from 'react'
 import "./blogdetail.scss";
 import "../../assets/fonts/fonts.css";
 import BlogSubs from "../../components/BlogSubs";
 import { waffle, annimg } from "../../assets/images/";
-import Blogcard from "../../components/Cards/BlogCard";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchBlogs } from "../../store/reducer/blogs/blogThunk";
+import BlogCard from '../../components/Cards/BlogCard'
 
 const BlogDetail = () => {
+
+
+  const {
+    blogs: { data },
+    status,
+  } = useSelector((state) => state.blog);
+  const dispatch = useDispatch();
+
+  console.log(data, "blogss");
+
+  React.useEffect(() => {
+    dispatch(fetchBlogs());
+  }, [dispatch]);
+
+  if (status === "pending") {
+    return <h1>Loading...</h1>;
+  }
+
+
+  
   return (
     <div className="blogdetail_container">
       <div className="blogdetail_heading">
@@ -72,8 +94,17 @@ const BlogDetail = () => {
       <div className="blogdetail_featured">
         <h2>Featured Posts</h2>
         <div className="blogdetail_blogcards">
-          
-        <Blogcard /> <Blogcard /> <Blogcard />
+        {status === "success" &&
+  data.slice(0, 2).map(({ id, attributes }) => (
+    <BlogCard className="blog_blogcard"
+            key={id}
+            image={attributes.images?.data[0].attributes.url}
+            tag=/* {attributes.tags?.data[0].attributes.title} */ "Vegan"
+            title={attributes.title}
+            description={attributes.description}
+            date="10-11-2022"
+    />
+  ))}
         </div>
 
       </div>

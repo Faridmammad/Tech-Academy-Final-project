@@ -1,12 +1,15 @@
 .productpage_container {
   display: flex;
   flex-direction: column;
+  padding: 5rem;
 }
 
 .productpage_shopcards {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: 1200px) {
     flex-direction: row;
@@ -14,9 +17,13 @@
 }
 
 .productpage_shopcards_first {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
   width: 510px;
   height: 300px;
   background-color: #edd99c;
+  justify-content: center;
 }
 
 .productpage_shopcards_info {
@@ -25,6 +32,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: flex-start;
+  padding: 1rem;
 }
 
 .shopcards_info_message {
@@ -40,13 +48,60 @@
 }
 
 .productpage_shopcards_second {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
   width: 510px;
   height: 300px;
   background-color: #dbebf8;
+  justify-content: space-between;
 }
 
 .productpage_shopcards_img {
   display: flex;
+}
+
+
+.name_breadcrump {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+  gap: 1.5rem;
+  @media (min-width: 1200px) {
+  flex-direction: row;  
+
+  }
+}
+
+.page_name {
+  font-family: Spectral700;
+  font-size: 26px;
+  color: #252B42; 
+}
+
+.page_breadcrump {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 7px;
+    height: 12px;
+  }
+  a {
+    text-decoration: none;
+    font-family: Spectral400;
+    font-size: 14px;
+    color: #252B42; 
+  }
+  p {
+    font-family: Spectral400;
+    font-size: 14px;
+    color: #737373; 
+  }
 }
 
 .product_container {
@@ -54,6 +109,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  width: 1300px;
 }
 
 .product_card {

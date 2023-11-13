@@ -8,5 +8,7 @@ export {default as Products} from "./Products"
 export {default as Team} from "./Team"
 export {default as BlogDetail} from "./BlogDetail"
 
+export {default as ProductDetail} from "./ProductDetail"
+
 export {default as Login} from "./Auth/Login"
 export {default as Register} from "./Auth/Register"

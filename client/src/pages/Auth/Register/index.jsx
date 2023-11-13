@@ -2,8 +2,9 @@ import React from "react";
 import { fetchAuthRegister } from "../../../store/reducer/auth/authThunk";
 import { useDispatch, useSelector } from "react-redux";
 import {useNavigate} from "react-router-dom";
-
-/* import {login} from "../Login/" */
+import "./register.scss"
+import "../../../assets/fonts/fonts.css"
+import Login from "../Login";
 
 const Register = () => {
   const { userDatas } = useSelector((state) => state.auth);
@@ -20,8 +21,7 @@ const Register = () => {
     dispatch(fetchAuthRegister(regDatas));
 
     if (userDatas) {
-      console.log("saa");
-      navigation(routes.LOGIN);
+      navigation(Login);
     }
   };
 
@@ -33,13 +33,20 @@ const Register = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+
+    
+    <div className="register_container">
+
+      <h3>Registration form</h3>
+    <form className="register_form" onSubmit={handleSubmit}>
       <input
         name="username"
         type="text"
         placeholder="name"
         value={regDatas.name}
         onChange={handleChangeValue}
+        
+        className="register_username"
       />
       <input
         name="email"
@@ -47,6 +54,8 @@ const Register = () => {
         placeholder="email"
         value={regDatas.email}
         onChange={handleChangeValue}
+        
+        className="register_email"
       />
       <input
         name="password"
@@ -54,9 +63,11 @@ const Register = () => {
         placeholder="pass"
         value={regDatas.password}
         onChange={handleChangeValue}
+        className="register_password"
       />
-      <button>Send</button>
+      <button>Register</button>
     </form>
+        </div>
   );
 };
 

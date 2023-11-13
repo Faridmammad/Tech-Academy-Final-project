@@ -4,6 +4,7 @@ import {facebook_blue, twitter_blue, linkedin_blue, instagram_blue, pin, phone, 
 import {small_donut} from "../../assets/images/index"
 import "./contact.scss"
 import "../../assets/fonts/fonts.css"
+import { Button } from "../../components";
 
 
 const Contact = () => {
@@ -38,34 +39,33 @@ const Contact = () => {
      
 
 
+      <div className="contact_visit">
+<h5 className="contact_tryfree_text"> VISIT OUR OFFICE</h5>
+<h1>We help small businesses 
+with big ideas</h1>
+</div>
 
-
-// !!
-{/* VISIT OUR OFFICE
-We help small businesses 
-with big ideas */}
-//!!
 <div className="container_cards">
   <div className="card1">
     <img src={phone}/>
     <p>georgia.young@example.com</p>
     <p>georgia.young@ple.com</p>
     <h5>Get Support</h5>
-    <button>Submit request</button>
+    <Button className="card_button" label="Submit Request"/>
   </div>
   <div className="card2">
     <img src={pin}/>
     <p>georgia.young@example.com</p>
     <p>georgia.young@ple.com</p>
     <h5>Get Support</h5>
-    <button>Submit request</button>
+    <Button className="card_button" label="Submit Request"/>
   </div>
   <div className="card3">
     <img src={email}/>
     <p>georgia.young@example.com</p>
     <p>georgia.young@ple.com</p>
     <h5>Get Support</h5>
-    <button>Submit request</button>
+    <Button className="card_button" label="Submit Request"/>
   </div>
 </div>
 
@@ -73,7 +73,7 @@ with big ideas */}
 <img src={arrow_curved}/>
 <h5 className="contact_tryfree_text"> WE Can`t WAIT TO MEET YOU</h5>
 <h1>Let`s Talk</h1>
-<button>Try it free now</button>
+<Button className="contact_try_button" label="Try it free now"/>
 </div>
 
 

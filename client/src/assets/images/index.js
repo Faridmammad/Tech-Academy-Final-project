@@ -40,3 +40,6 @@ export {default as shopcard_d3} from "./shopcard_d3.svg"
 
 export {default as feapro1} from "./fp1.svg"
 export {default as feapro2} from "./fp2.svg"
+
+export {default as shopcart_img1} from "./products/shopcart_img1.svg"
+export {default as shopcart_img2} from "./products/shopcart_img2.svg"

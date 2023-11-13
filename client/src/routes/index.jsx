@@ -11,6 +11,7 @@ import {
   Products,
   Register,
   Team,
+  ProductDetail
 } from "../pages/index";
 import PublicLayout from "../layouts/PublicLayout";
 import ProtectedLayout from "../layouts/ProtectedLayout";
@@ -26,6 +27,8 @@ const Navigation = () => {
         <Route path="Contact" element={<Contact />} />
         <Route path="About" element={<About />} />
         <Route path="Products" element={<Products />} />
+        
+        <Route path="ProductDetail" element={<ProductDetail />} />
         <Route path="Team" element={<Team />} />
         <Route path="*" element={<Oops />} />
       </Route>
